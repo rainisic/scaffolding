@@ -3,7 +3,7 @@
  * Package: com.rainisic.webdev.blog.web
  * Author:	rainisic
  * Date:	Jul 1, 2013
- * Copyright © 2010-2013 by Beijing Novel-SuperTV Digital TV Technology Co., Ltd. All rights reserved.
+ * Copyright © 2010-2013 by Rainisic. All rights reserved.
  */
 package com.rainisic.webdev.blog.web;
 

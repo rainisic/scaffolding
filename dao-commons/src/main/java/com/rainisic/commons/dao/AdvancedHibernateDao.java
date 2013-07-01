@@ -21,7 +21,7 @@ import org.springframework.orm.hibernate3.HibernateTemplate;
 /**
  * Provide advanced hibernate access functions.<br>
  * 
- * @author Rainisic
+ * @author rainisic
  * @version 1.0.0
  * @since 1.0.0
  */

@@ -1,7 +1,7 @@
 /* @(#) ApplicationConfiguration.java
  * Project:	web-commons
  * Package: cn.videoworks.webdev.commons.props
- * Author:	LuoChuan
+ * Author:	rainisic
  * Date:	Jun 17, 2013
  * Copyright © 2010-2013 by Rainisic. All rights reserved.
  */
@@ -16,7 +16,7 @@ import java.util.Properties;
  * Application configurations loading by
  * {@link com.rainisic.webdev.listener.ConfigureLoaderListener}.
  * 
- * @author Rainisic
+ * @author rainisic
  * @version 1.0.0
  * @since 1.0.0
  */

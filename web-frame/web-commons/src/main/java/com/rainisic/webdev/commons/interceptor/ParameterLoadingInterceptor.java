@@ -20,7 +20,7 @@ import com.rainisic.webdev.commons.vo.SEO;
 /**
  * Load parameters to current request.
  * 
- * @author Rainisic
+ * @author rainisic
  * @version 1.0.0
  * @since 1.0.0
  */

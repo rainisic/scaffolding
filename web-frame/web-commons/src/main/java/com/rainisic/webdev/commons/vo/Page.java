@@ -1,7 +1,7 @@
 /* @(#) Page.java
  * Project:	web-commons
  * Package: cn.videoworks.webdev.commons.vo
- * Author:	LuoChuan
+ * Author:	rainisic
  * Date:	Jun 17, 2013
  * Copyright © 2010-2013 by Rainisic. All rights reserved.
  */
@@ -13,7 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * Paging value object.<br>
  * 
- * @author Rainisic
+ * @author rainisic
  * @version 1.0.0
  * @since 1.0.0
  */
