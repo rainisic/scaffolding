@@ -10,17 +10,24 @@ package com.rainisic.webdev.blog.entity;
 import java.sql.Date;
 
 /**
- * @author rainisic
+ * Article entity class.
  * 
+ * @author rainisic
+ * @version 1.0.0
+ * @since 1.0.0
  */
 public class Article {
 
+	/** Article identifier. */
 	private String id;
 
+	/** Article title. */
 	private String title;
 
+	/** Article content. */
 	private String content;
 
+	/** Article publish time. */
 	private Date publishTime;
 
 	/**

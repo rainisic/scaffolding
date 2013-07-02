@@ -1,11 +1,11 @@
 /* @(#) AdvancedHibernateDao.java
  * Project:	dao-commons
- * Package: com.rainisic.commons.dao
+ * Package: com.rainisic.commons.dao.hibernate
  * Author:	rainisic
  * Date:	Jul 1, 2013
  * Copyright © 2010-2013 by Rainisic. All rights reserved.
  */
-package com.rainisic.commons.dao;
+package com.rainisic.commons.dao.hibernate;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
