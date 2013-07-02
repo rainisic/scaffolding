@@ -20,6 +20,12 @@
 	</properties>
 	<dependencies>
 
+		<!-- Spring Data -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+		</dependency>
+
 		<!-- Internal Dependencies -->
 		<dependency>
 			<groupId>com.rainisic.webdev.commons</groupId>

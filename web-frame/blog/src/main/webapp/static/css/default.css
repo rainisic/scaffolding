@@ -1,0 +1,8 @@
+/*!
+ * Import the default theme.
+ */
+@import "global/reset.css";
+@import "global/public.css";
+@import "global/device/computer/computer.css";
+@import "global/device/pad/pad.css";
+@import "global/device/mobile/mobile.css";

@@ -10,4 +10,59 @@
 		http://www.springframework.org/schema/mvc
 		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
 
+	<!-- Scan all Controllers. -->
+	<context:component-scan base-package="com.**.web.**" />
+
+	<!-- Spring MVC Annotation Driven. -->
+	<mvc:annotation-driven />
+
+	<!-- Static resources. -->
+	<mvc:resources mapping="/static/**" location="/static/" />
+
+	<!-- Add tiles configure -->
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>classpath:tiles-general.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- freemarker configure -->
+	<bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/freemarker/" />
+	</bean>
+
+	<!-- Add tiles view resolver -->
+	<bean id="tiles2ViewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="order" value="1" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles2.TilesView" />
+	</bean>
+
+	<!-- Freemarker view resolver -->
+	<bean id="freemarkerViewResolver"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="order" value="2" />
+		<property name="cache" value="true" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".ftl" />
+	</bean>
+
+	<!-- Multipart request resolver. -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+	<!-- Common parameters loading interceptor. -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/static/**/*" />
+			<bean
+				class="com.rainisic.webdev.commons.interceptor.ParameterLoadingInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>

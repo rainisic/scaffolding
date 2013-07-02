@@ -1,0 +1,9 @@
+a:link, a:visited {
+	text-decoration: none;
+	color: black;
+	-webkit-transition: color 200ms;
+}
+
+a:link:hover, a:visited:hover {
+	color: red;
+}

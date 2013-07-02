@@ -22,7 +22,7 @@
 	<dependencyManagement>
 		<dependencies>
 
-			<!-- Spring 3 -->
+			<!-- Spring Framework -->
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-aop</artifactId>
@@ -89,6 +89,18 @@
 				<version>${spring.version}</version>
 			</dependency>
 
+			<!-- Spring Data -->
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-redis</artifactId>
+				<version>1.0.4.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-mongodb</artifactId>
+				<version>1.2.1.RELEASE</version>
+			</dependency>
+
 			<!-- MySQL Configurations. -->
 			<dependency>
 				<groupId>mysql</groupId>
@@ -110,13 +122,6 @@
 						<groupId>org.slf4j</groupId>
 					</exclusion>
 				</exclusions>
-			</dependency>
-
-			<!-- MongoDB -->
-			<dependency>
-				<groupId>org.mongodb</groupId>
-				<artifactId>mongo-java-driver</artifactId>
-				<version>2.11.2</version>
 			</dependency>
 
 			<!-- Apache Commons -->

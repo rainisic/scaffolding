@@ -1,0 +1,184 @@
+/**************** Global ****************/
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: "Open Sans", Sans-Serif;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	background-color: gainsboro;
+}
+
+/**************** Computer CSS ****************/
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+}
+
+/**************** Site Header ****************/
+header.site-header {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	position: fixed;
+	background-color: #f5f5f5;
+	font-size: 1.2em;
+	box-shadow: 0 0 10px gray;
+	z-index: 99;
+}
+
+header.site-header .categories {
+	width: 100%;
+	max-width: 528px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+header.site-header .category {
+	display: inline-block;
+	color: dimgray;
+	cursor: pointer;
+	height: 45px;
+	margin: 0 20px;
+}
+
+header.site-header .category:hover {
+	color: black;
+	height: 43px;
+	border-bottom: 2px solid royalblue;
+}
+
+header.site-header .category.active {
+	border-bottom: 2px solid royalblue;
+	color: black;
+	font-weight: 600;
+	height: 43px;
+}
+
+#activities {
+	position: absolute;
+	width: 100px;
+}
+
+.activities {
+	font-weight: 600;
+	padding-left: 20px;
+}
+
+/**************** Side Bar ****************/
+#sidebar {
+	position: fixed;
+	left: -300px;
+	top: 0;
+	bottom: 0;
+	width: 250px;
+	background-color: white;
+	box-shadow: 0 0 20px gray;
+	-webkit-transition: left .5s;
+	z-index: 99;
+}
+
+#sidebar.visible {
+	left: 0px;
+}
+
+#sidebar header {
+	height: 45px;
+	line-height: 45px;
+}
+
+#sidebar header .activities {
+	font-size: 1.2em;
+	border-bottom: 1px solid silver;
+}
+
+/**************** Main Section ****************/
+section.main-section {
+	position: fixed;
+	top: 45px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-color: gainsboro;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 1;
+}
+
+section.main-section .paper {
+	background-color: white;
+	max-width: 1100px;
+	margin: 0 auto;
+	box-shadow: 0 0 20px gray;
+	padding: 20px 50px;
+}
+
+/**************** Scroll Bar ****************/
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+	overflow: visible;
+	background-color: gainsboro;
+	border-left: 1px solid silver;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: silver;
+	border-left: 1px solid gray;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: gainsboro;
+}
+
+/**************** Index *****************/
+.articles {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+}
+.articles.right {
+	margin-left: 2%;
+}
+
+.article {
+	border: 1px silver solid;
+	margin: 25px 0;
+	padding: 20px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .1), -1px -1px 2px rgba(0, 0, 0, .1);
+}
+
+.article:hover {
+	background-color: lightyellow;
+}
+
+
+/******************* Editor ********************/
+#editor {
+	border: 1px silver solid;
+}
+#editor legend {
+	font-size: 1.2em;
+}
+#editor label {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+#editor input {
+	width: 300px;
+	border: 1px silver solid;
+}
+.text-right {
+	text-align: right;
+}
