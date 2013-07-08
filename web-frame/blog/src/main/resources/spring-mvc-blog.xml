@@ -33,6 +33,18 @@
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<property name="templateLoaderPath" value="/WEB-INF/freemarker/" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">0</prop>
+				<prop key="default_encoding">UTF-8</prop>
+				<prop key="locale">zh_CN</prop>
+				<prop key="number_format">#</prop>
+				<prop key="date_format">yyyy-MM-dd</prop>
+				<prop key="url_escaping_charset"></prop>
+				<prop key="whitespace_stripping">true</prop>
+				<prop key="localized_lookup">false</prop>
+			</props>
+		</property>
 	</bean>
 
 	<!-- Add tiles view resolver -->
@@ -50,6 +62,10 @@
 		<property name="cache" value="true" />
 		<property name="prefix" value="" />
 		<property name="suffix" value=".ftl" />
+		<property name="exposeSpringMacroHelpers" value="true" />
+		<property name="exposeRequestAttributes" value="true" />
+		<property name="exposeSessionAttributes" value="true" />
+		<property name="requestContextAttribute" value="request" />
 	</bean>
 
 	<!-- Multipart request resolver. -->

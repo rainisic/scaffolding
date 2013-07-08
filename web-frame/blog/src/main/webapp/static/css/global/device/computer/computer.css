@@ -166,19 +166,30 @@ section.main-section .paper {
 /******************* Editor ********************/
 #editor {
 	border: 1px silver solid;
+	padding: 20px;
 }
 #editor legend {
 	font-size: 1.2em;
 }
 #editor label {
 	display: inline-block;
-	width: 100px;
-	text-align: center;
+	width: 50px;
+	text-align: left;
 }
 #editor input {
 	width: 300px;
 	border: 1px silver solid;
 }
+#editor textarea {
+	width: 99%;
+	height: 500px;
+	resize: none;
+	border: 1px silver solid;
+}
 .text-right {
 	text-align: right;
+}
+#editor input:focus, #editor textarea:focus {
+	background-color: #eeeeff;
+	outline: none;
 }

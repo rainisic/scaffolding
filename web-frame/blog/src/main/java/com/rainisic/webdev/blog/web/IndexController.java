@@ -8,19 +8,20 @@
 package com.rainisic.webdev.blog.web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author rainisic
- *
+ * 
  */
 @Controller
 public class IndexController {
-	
+
 	@RequestMapping("/")
-	public String index(Model model) {
-		model.addAttribute("message", "Success");
-		return "site.index.index";
+	public String index(ModelMap model, String dataType) {
+		model.addAttribute("dataType", dataType);
+		return "forward:/article/list";
 	}
+
 }

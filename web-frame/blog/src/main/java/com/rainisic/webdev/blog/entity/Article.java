@@ -3,11 +3,11 @@
  * Package: com.rainisic.webdev.blog.entity
  * Author:	rainisic
  * Date:	Jul 2, 2013
- * Copyright © 2010-2013 by Beijing Novel-SuperTV Digital TV Technology Co., Ltd. All rights reserved.
+ * Copyright © 2010-2013 by Rainisic. All rights reserved.
  */
 package com.rainisic.webdev.blog.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * Article entity class.
@@ -20,6 +20,9 @@ public class Article {
 
 	/** Article identifier. */
 	private String id;
+
+	/** Article URI. */
+	private String uri;
 
 	/** Article title. */
 	private String title;
@@ -43,6 +46,21 @@ public class Article {
 	 */
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	/**
+	 * @return the uri
+	 */
+	public String getUri() {
+		return uri;
+	}
+
+	/**
+	 * @param uri
+	 *            the uri to set
+	 */
+	public void setUri(String uri) {
+		this.uri = uri;
 	}
 
 	/**
